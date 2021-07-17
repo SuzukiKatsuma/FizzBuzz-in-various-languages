@@ -1,17 +1,23 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
   int x;
-  scanf("%d", &x);
+  scanf_s("%d", &x);
 
-  if (x%15 == 0)
-    printf("FizzBuzz");
-  else if (x%5 == 0)
-    printf("Buzz");
-  else if (x%3 == 0)
-    printf("Fizz");
-  else
-    printf("%d", x);
+  for (int i = 1; i <= x; i++)
+  {
+    if (i % 15 == 0)
+      printf("FizzBuzz");
+    else if (i % 3 == 0)
+      printf("Fizz");
+    else if (i % 5 == 0)
+      printf("Buzz");
+    else
+      printf("%d", i);
+
+    printf("\t");
+  }
 
   return 0;
 }

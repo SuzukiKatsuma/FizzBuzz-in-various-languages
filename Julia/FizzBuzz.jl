@@ -1,11 +1,14 @@
 x = parse.(Int, readline())
-
-if x % 15 == 0
-    println("FizzBuzz")
-elseif x % 5 == 0
-    println("Buzz")
-elseif x % 3 == 0
-    println("Fizz")
-else
-    println(x)
+  
+for i in 1:x
+  if i % 15 == 0
+    print("FizzBuzz")
+  elseif i % 3 == 0
+    print("Fizz")
+  elseif i % 5 == 0
+    print("Buzz")
+  else
+    print(i)
+  end
+  print("\t")
 end

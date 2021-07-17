@@ -1,21 +1,25 @@
-function FizzBuzz(x) {
-  if (x % 15 == 0) {
-    document.write("FizzBuzz");
-    console.log("FizzBuzz");
-  }
-  else if (x % 5 == 0) {
-    document.write("Buzz");
-    console.log("Buzz");
-  }
-  else if (x % 3 == 0) {
-    document.write("Fizz");
-    console.log("Fizz");
-  }
-  else {
-    document.write(x);
-    console.log(x);
-  }
-}
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
 
-var x = prompt();
-FizzBuzz(x);
+const x = [];
+const reader = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+reader.on('line', (line) => {
+  x.push(line);
+});
+
+reader.on('close', () => {
+  for (let i = 1; i <= x[0]; i++) {
+    if (i % 15 === 0)
+      process.stdout.write("FizzBuzz\t");
+    else if (i % 3 === 0)
+      process.stdout.write("Fizz\t");
+    else if (i % 5 === 0)
+      process.stdout.write("Buzz\t");
+    else
+      process.stdout.write(i + `\t`);
+  }
+});

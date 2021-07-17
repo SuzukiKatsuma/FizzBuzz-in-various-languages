@@ -1,11 +1,14 @@
 x = gets.to_i
-  
-if x % 15 == 0
-  puts "FizzBuzz"
-elsif x % 5 == 0
-  puts "Buzz"
-elsif x % 3 == 0
-  puts "Fizz"
-else
-  puts x
+
+for i in 1..x do
+  if i % 15 == 0
+    print "FizzBuzz"
+  elsif i % 5 == 0
+    print "Buzz"
+  elsif i % 3 == 0
+    print "Fizz"
+  else
+    print i
+  end
+  print "/t"
 end
