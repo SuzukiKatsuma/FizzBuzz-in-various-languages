@@ -12,3 +12,5 @@ Note: In the future, I plan to cover more basic programs than just FizzBuzz.
 [![PHP](https://img.shields.io/badge/PHP-f2f2f2.svg?logo=php&style=for-the-badge)](/PHP/FizzBuzz.php)
 [![Python](https://img.shields.io/badge/Python-ffde73.svg?logo=python&style=for-the-badge)](/Python/FizzBuzz.py)
 [![Ruby](https://img.shields.io/badge/Ruby-cc342d.svg?logo=ruby&style=for-the-badge)](/Ruby/FizzBuzz.rb)
+[![TypeScript](https://img.shields.io/badge/TypeScript-f7f7f7.svg?logo=typescript&style=for-the-badge)](/TypeScript/FizzBuzz.ts)
+
